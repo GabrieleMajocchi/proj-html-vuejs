@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <div class="singleCardBrowse d-flex" v-if="card.name === 'browse'">
+    <div class="CardsBrowse d-flex" v-if="card.name === 'browse'">
         <div class="my-card" v-for="n in (card.section.length)">
             <img :src='getCardImg(card.img[n-1])' alt="Product Image">
             <p class="m-0">{{card.section[n-1]}}</p>
@@ -30,7 +30,7 @@
     @use '../../styles/partials/mixins.scss' as *;
     @use '../../styles/partials/variables.scss' as *;
 
-    .singleCardBrowse{
+    .CardsBrowse{
         text-align: center;
         font-size: 25px;
         width: 65%;
