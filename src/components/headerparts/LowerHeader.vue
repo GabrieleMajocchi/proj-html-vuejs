@@ -53,6 +53,7 @@
             li:hover a{
                 background-color: $bgGreen;
                 color: $textColor;
+                border-bottom: 1px solid $textGreen;
             }
         }
     }
