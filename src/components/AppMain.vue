@@ -1,9 +1,11 @@
 <script>
 import FirstSection from './mainparts/FirstSection.vue';
+import PromoBanner from './mainparts/PromoBanner.vue';
     export default {
         name: 'AppMain',
         components: {
             FirstSection,
+            PromoBanner,
         },
         data() {
             return {
@@ -21,6 +23,7 @@ import FirstSection from './mainparts/FirstSection.vue';
         <!-- ---First section, slogan--- -->
         <FirstSection/>
         <!-- ---Promo banner--- -->
+        <PromoBanner/>
         <!-- ---Browse by category--- -->
         <!-- ---Food type card--- -->
         <!-- ---New arrivals weekly--- -->
@@ -34,7 +37,7 @@ import FirstSection from './mainparts/FirstSection.vue';
 </template>
 
 <style lang="scss" scoped>
-    @use '../styles/partials/mixing.scss' as *;
+    @use '../styles/partials/mixins.scss' as *;
     @use '../styles/partials/variables.scss' as *;
 
 </style>
