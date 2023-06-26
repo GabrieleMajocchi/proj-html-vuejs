@@ -9,8 +9,8 @@ import LowerHeader from './headerparts/LowerHeader.vue'
         },
         data() {
             return {
-                navSections: [{name: 'Home', element1: 'Home - Alternate'},
-                                {name: 'Shop', element1: 'Shop no sidebar', element2: 'Shop single sidebar', element3: 'Shop dual sidebar', element4: 'Simple product', element5: 'variable product'},
+                navSections: [{name: 'Home', elements: ['Home - Alternate']},
+                                {name: 'Shop', elements: ['Shop no sidebar', 'Shop single sidebar', 'Shop dual sidebar', 'Simple product', 'variable product']},
                                 {name: 'About'},
                                 {name: 'Blog'},
                                 {name: 'Contact'},
