@@ -35,8 +35,7 @@
     .foodtypeCards{
         width: 65%;
         .my-card{
-            background-image: url('../../assets/img/bg-transparent-3.png');
-            background-color: $bgDarkGreen;
+            background-image: url('../../assets/img/foodbg.png');
             width: 100%;
             transition: all 0.3s;
             margin: 0 8px;
@@ -54,7 +53,7 @@
             }
             img{
                 width: 100%;
-                padding: 30px 5rem 0;
+                padding: 40px 5rem 0;
             }
             a{
                 margin-bottom: 50px;
