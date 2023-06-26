@@ -1,6 +1,10 @@
 <script>
+import FirstSection from './mainparts/FirstSection.vue';
     export default {
         name: 'AppMain',
+        components: {
+            FirstSection,
+        },
         data() {
             return {
                 
@@ -14,8 +18,8 @@
 
 <template>
     <main>
-        <h1>App Main</h1>
         <!-- ---First section, slogan--- -->
+        <FirstSection/>
         <!-- ---Promo banner--- -->
         <!-- ---Browse by category--- -->
         <!-- ---Food type card--- -->
