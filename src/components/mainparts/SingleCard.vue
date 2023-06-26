@@ -36,7 +36,7 @@
         width: 65%;
         margin: auto;
         img{
-            width: 295px;
+            width: 100%;
         }
         .my-card{
             margin: 48px 12px;
