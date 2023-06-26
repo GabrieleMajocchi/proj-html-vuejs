@@ -45,6 +45,7 @@
         padding: 16px 18px;
         ul{
             border: none;
+            border-radius: 0;
             a{
                 padding: 13px 16px;
                 border-bottom: 1px solid $textGrey;
