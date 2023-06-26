@@ -15,6 +15,17 @@
 <template>
     <main>
         <h1>App Main</h1>
+        <!-- ---First section, slogan--- -->
+        <!-- ---Promo banner--- -->
+        <!-- ---Browse by category--- -->
+        <!-- ---Food type card--- -->
+        <!-- ---New arrivals weekly--- -->
+        <!-- ---Items everyone loves--- -->
+        <!-- ---Users testimonials--- -->
+        <!-- ---Newsletter--- -->
+        <!-- ---Tips and tricks--- -->
+        <!-- ---Big pic and infos--- -->
+        <!-- ---New products arrival--- -->
     </main>
 </template>
 
