@@ -45,6 +45,11 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         <!-- ---Food type card--- -->
         <SingleFoodtype :foodlist="foodlist"/>
         <!-- ---New arrivals weekly--- -->
+        <div class="newArrivals">
+            <p class="fw-bold">FIND THE BEST ANIMAL SUPPLIES</p>
+            <h1>New arrivals weekly</h1>
+            <a href="#">Learn more about us</a>
+        </div>
         <!-- ---All-time best sellers--- -->
         <!-- ---Users testimonials--- -->
         <!-- ---Newsletter--- -->
@@ -62,6 +67,26 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         margin-top: 100px;
         p{
             width: 30%;
+        }
+    }
+
+    .newArrivals{
+        background-image: url('../assets/img/banner-3-2x-scaled.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 515px;
+        color: $textColor;
+        text-align: center;
+        width: 64%;
+        margin: auto;
+        padding-top: 150px;
+        margin-top: 100px;
+        h1{
+            margin-bottom: 3rem;
+        }
+        a{
+            @include buttonGreen(0)
         }
     }
 </style>
