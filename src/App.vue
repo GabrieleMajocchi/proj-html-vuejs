@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "bootstrap/scss/bootstrap";
   @import './styles/general.scss';
 
