@@ -28,6 +28,7 @@ import LowerHeader from './headerparts/LowerHeader.vue'
     <header>
         <!-- ---Top header with Logo, search and user icon--- -->
         <TopHeader/>
+        <hr class="m-0">
         <!-- ---Lower header with navbar--- -->
         <LowerHeader :navSections="navSections"/>
     </header>
@@ -37,4 +38,7 @@ import LowerHeader from './headerparts/LowerHeader.vue'
     @use '../styles/partials/mixing.scss' as *;
     @use '../styles/partials/variables.scss' as *;
 
+    hr{
+        color: grey;
+    }
 </style>
