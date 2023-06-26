@@ -26,6 +26,11 @@
             </ul>
         </div>
     </nav>
+    <div class="banner d-flex justify-content-around align-items-center">
+        <p class="m-0"><i class="fa-regular fa-map"></i><span class="fw-bold"> International</span> Shipping Services</p>
+        <p class="m-0"><i class="fa-regular fa-clock"></i> See our <span class="fw-bold">store hours and</span> services</p>
+        <p class="m-0"><i class="fa-solid fa-check"></i> We price match to give you the <span class="fw-bold">best deals</span></p>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -57,5 +62,14 @@
 
     .dropdown:hover a{
         color: $textBlack;
+    }
+    .banner{
+        height: 63px;
+        width: 100%;
+        background-color: $bgDarkGreen;
+        background-image: url('../../assets/img/bg-transparent-3.png');
+        color: $textColor;
+        padding: 0 17rem;
+        font-size: 0.9rem;
     }
 </style>
