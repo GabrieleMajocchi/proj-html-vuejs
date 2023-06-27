@@ -3,6 +3,7 @@ import FirstSection from './mainparts/FirstSection.vue';
 import PromoBanner from './mainparts/PromoBanner.vue';
 import SingleCard from './mainparts/SingleCard.vue';
 import SingleFoodtype from './mainparts/SingleFoodtype.vue';
+import SingleTestimonials from './mainparts/SingleTestimonials.vue'
     export default {
         name: 'AppMain',
         components: {
@@ -10,6 +11,7 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
             PromoBanner,
             SingleCard,
             SingleFoodtype,
+            SingleTestimonials,
         },
         data() {
             return {
@@ -21,6 +23,11 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
                 foodlist: [{name: 'Kibble', type: 'Dry dog food', img: 'food-transparent-18.png', section: 'dry food'},
                             {name: 'Moist', type: 'Canned dog food', img: 'food-transparent-17.png', section: 'moist food'},
                             {name: 'Frozen', type: 'Freeze-Dried dog food', img: 'food-transparent-16.png', section: 'frozen food'}
+                        ],
+
+                testimonials: [{name: 'Lisa Smith, ThemeFusion', review: 'Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.', img: 'avatar-3.jpg'},
+                                {name: 'Melissa Green, ThemeFusion', review: 'Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.', img: 'avatar-1.jpg'},
+                                {name: 'Sam Lewis, ThemeFusion', review: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.', img: 'avatar-4.jpg'},
                         ],
             }
         },
@@ -62,6 +69,10 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
             <SingleCard :card="arrayCard[1]"/>
         </div>
         <!-- ---Users testimonials--- -->
+        <div class="testimonials">
+            <h1 class="fw-normal">Users testimonials</h1>
+            <SingleTestimonials :testimonials="testimonials"/>
+        </div>
         <!-- ---Newsletter--- -->
         <!-- ---Tips and tricks--- -->
         <!-- ---Big pic and infos--- -->
@@ -131,6 +142,19 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
             height: fit-content;
             font-size: 14px;
             @include buttonGreenDark(0)
+        }
+    }
+
+    .testimonials{
+        margin-top: 50px;
+        background-image: url('../assets/img/testimonialsbg.png');
+        height: 700px;
+        h1{
+            font-size: 34px;
+            text-align: center;
+            color: $textColor;
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+            padding-top: 130px;
         }
     }
 </style>
