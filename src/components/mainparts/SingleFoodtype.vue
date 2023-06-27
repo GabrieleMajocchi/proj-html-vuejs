@@ -45,17 +45,22 @@
                 filter: brightness(1.3);
             }
             h1{
+                font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 34px;
                 color: $textColor;
                 padding-top: 75px;
             }
             p{
                 color: $textGreen;
+                font-size: 20px;
             }
             img{
                 width: 100%;
                 padding: 40px 5rem 0;
             }
             a{
+                font-size: 14px;
                 margin-bottom: 50px;
                 @include buttonOnlyGreen(0)
                 

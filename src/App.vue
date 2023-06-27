@@ -25,4 +25,7 @@
   @import "bootstrap/scss/bootstrap";
   @import './styles/general.scss';
 
+  *{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  }
 </style>

@@ -35,7 +35,7 @@ import LowerHeader from './headerparts/LowerHeader.vue'
 </template>
 
 <style lang="scss" scoped>
-    @use '../styles/partials/mixing.scss' as *;
+    @use '../styles/partials/mixins.scss' as *;
     @use '../styles/partials/variables.scss' as *;
 
     hr{

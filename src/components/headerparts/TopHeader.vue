@@ -19,7 +19,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search..">
         </div>
-        <p><span class="fw-bold">Questions?</span> Call us : 1.800.123.4567</p>
+        <p><span class="fw-semibold">Questions?</span> Call us : 1.800.123.4567</p>
         <div class="userIcons">
             <i class="fa-solid fa-cart-shopping"></i>
             <i class="fa-regular fa-user"></i>
@@ -35,6 +35,9 @@
         padding: 1rem 0;
         img{
             height: 36px;
+        }
+        input{
+            font-size: 14px;
         }
         .searchBar{
             background-color: $bgGrey;

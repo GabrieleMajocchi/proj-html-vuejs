@@ -32,7 +32,7 @@
 
     .CardsBrowse{
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
         width: 65%;
         margin: auto;
         img{

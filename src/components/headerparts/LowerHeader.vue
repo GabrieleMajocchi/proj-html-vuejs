@@ -18,7 +18,7 @@
 <template>
     <nav class="d-flex m-auto">
         <div class="dropdown" v-for="element in navSections">
-            <a class="nav-link fw-semibold" :class="element.elements === undefined ? '' : 'dropdown-toggle'" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link fw-medium" :class="element.elements === undefined ? '' : 'dropdown-toggle'" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{element.name}}
             </a>
             <ul v-if="element.elements !== undefined" class="dropdown-menu p-0">
@@ -27,9 +27,9 @@
         </div>
     </nav>
     <div class="banner d-flex justify-content-around align-items-center">
-        <p class="m-0"><i class="fa-regular fa-map"></i><span class="fw-bold"> International</span> Shipping Services</p>
-        <p class="m-0"><i class="fa-regular fa-clock"></i> See our <span class="fw-bold">store hours and</span> services</p>
-        <p class="m-0"><i class="fa-solid fa-check"></i> We price match to give you the <span class="fw-bold">best deals</span></p>
+        <p class="m-0"><i class="fa-regular fa-map"></i><span class="fw-semibold"> International</span> Shipping Services</p>
+        <p class="m-0"><i class="fa-regular fa-clock"></i> See our <span class="fw-semibold">store hours and</span> services</p>
+        <p class="m-0"><i class="fa-solid fa-check"></i> We price match to give you the <span class="fw-semibold">best deals</span></p>
     </div>
 </template>
 
@@ -71,6 +71,6 @@
         background-image: url('../../assets/img/bg-transparent-3.png');
         color: $textColor;
         padding: 0 17rem;
-        font-size: 0.9rem;
+        font-size: 15px;
     }
 </style>

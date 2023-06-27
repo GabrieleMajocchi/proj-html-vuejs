@@ -38,7 +38,7 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         <PromoBanner/>
         <!-- ---Browse by category--- -->
         <div class="browse d-flex flex-column">
-            <h1 class="m-auto">Browse by category</h1>
+            <h1 class="m-auto fw-normal">Browse by category</h1>
             <p class="m-auto text-center">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
             <SingleCard :card="arrayCard[0]"/>
         </div>
@@ -46,9 +46,9 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         <SingleFoodtype :foodlist="foodlist"/>
         <!-- ---New arrivals weekly--- -->
         <div class="newArrivals">
-            <p class="fw-bold">FIND THE BEST ANIMAL SUPPLIES</p>
-            <h1>New arrivals weekly</h1>
-            <a href="#">Learn more about us</a>
+            <p class="fw-semibold">FIND THE BEST ANIMAL SUPPLIES</p>
+            <h1 class="fw-normal">New arrivals weekly</h1>
+            <a href="#" class="fw-medium">Learn more about us</a>
         </div>
         <!-- ---All-time best sellers--- -->
         <!-- ---Users testimonials--- -->
@@ -65,8 +65,16 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
 
     .browse{
         margin-top: 100px;
+        h1{
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+            font-size: 34px;
+            line-height: 46px;
+            padding-bottom: 15px;
+        }
         p{
-            width: 30%;
+            width: 35%;
+            font-size: 17px;
+            line-height: 31px;
         }
     }
 
@@ -83,9 +91,16 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         padding-top: 150px;
         margin-top: 100px;
         h1{
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
             margin-bottom: 3rem;
+            font-size: 50px;
+        }
+        p{
+            font-size: 14px;
+            letter-spacing: 2px;
         }
         a{
+            font-size: 14px;
             @include buttonGreen(0)
         }
     }
