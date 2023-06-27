@@ -19,7 +19,7 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
             return {
                 arrayCard: [{name: 'browse', section: ['Bed (1)', 'Food (6)', 'Toys (6)', 'Transport (7)'], img: ['product-9.jpg', 'product-3.jpg', 'product-2.jpg', 'product-4.jpg']}, 
                             {name: 'bestsellers', section: ['Transport cage', 'Dog leash', 'Animal transport cage', 'Colorful cat leash'], price: ['$25.00', '$25.00', '$25.00', '$12.00'], img: ['product-21.jpg', 'product-20.jpg', 'product-16.jpg', 'product-11.jpg'], discount: ['', '', '$35.00', '']},
-                            {name: 'articles', section: ['How to ‘loose leash walk’ your dog', 'Stop cats from scratching furniture', 'Where to buy the best pet food', 'Proper care for your pet toys'], date: ['April 21st, 2020', 'April 19st, 2020', 'April 18st, 2020', 'April 17st, 2020']}
+                            {name: 'articles', section: ['How to ‘loose leash walk’ your dog', 'Stop cats from scratching furniture', 'Where to buy the best pet food', 'Proper care for your pet toys'], date: ['April 21st, 2020', 'April 19st, 2020', 'April 18st, 2020', 'April 17st, 2020'], img: ['blog-1.jpg', 'blog-2.jpg', 'blog-3.jpg', 'blog-4.jpg']}
                         ],
                 
                 foodlist: [{name: 'Kibble', type: 'Dry dog food', img: 'food-transparent-18.png', section: 'dry food'},
@@ -78,6 +78,12 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
         <!-- ---Newsletter--- -->
         <NewsletterSection/>
         <!-- ---Tips and tricks--- -->
+        <div class="tips text-center">
+            <h1 class="fw-normal">Get the best tips & tricks</h1>
+            <p>Recent articles</p>
+            <SingleCard :card="arrayCard[2]"/>
+            <a href="#" class="fw-medium">Read all articles</a>
+        </div>
         <!-- ---Big pic and infos--- -->
         <!-- ---New products arrival--- -->
     </main>
@@ -158,6 +164,23 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
             color: $textColor;
             font-family: 'Trocchi', Arial, Helvetica, sans-serif;
             padding-top: 130px;
+        }
+    }
+
+    .tips{
+        margin-top: 100px;
+        h1{
+            font-size: 34px;
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+        }
+        p{
+            color: $textGreen;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        a{
+            font-size: 14px;
+            @include buttonGreenDark(0)
         }
     }
 </style>
