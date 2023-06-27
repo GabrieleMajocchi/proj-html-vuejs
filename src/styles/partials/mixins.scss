@@ -26,6 +26,16 @@
     margin-top: $marginT;
 }
 
+@mixin buttonOnlyWhite($marginT: 10px){
+    text-decoration: none;
+    color: $textBlack;
+    background-color: $bgWhite;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin-top: $marginT;
+}
+
 @mixin buttonGreenDark($marginT: 10px){
     text-decoration: none;
     color: $textColor;
