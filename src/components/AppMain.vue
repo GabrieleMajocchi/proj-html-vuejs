@@ -14,7 +14,7 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         data() {
             return {
                 arrayCard: [{name: 'browse', section: ['Bed (1)', 'Food (6)', 'Toys (6)', 'Transport (7)'], img: ['product-9.jpg', 'product-3.jpg', 'product-2.jpg', 'product-4.jpg']}, 
-                            {name: 'bestsellers', section: ['Transport cage', 'Dog leash', 'Animal transport cage', 'Colorful cat leash'], price: ['$25.00', '$25.00', '<span class="text-decoration-line-through">$35.00</span> $25.00', '$12.00']},
+                            {name: 'bestsellers', section: ['Transport cage', 'Dog leash', 'Animal transport cage', 'Colorful cat leash'], price: ['$25.00', '$25.00', '$25.00', '$12.00'], img: ['product-21.jpg', 'product-20.jpg', 'product-16.jpg', 'product-11.jpg'], discount: ['', '', '$35.00', '']},
                             {name: 'articles', section: ['How to ‘loose leash walk’ your dog', 'Stop cats from scratching furniture', 'Where to buy the best pet food', 'Proper care for your pet toys'], date: ['April 21st, 2020', 'April 19st, 2020', 'April 18st, 2020', 'April 17st, 2020']}
                         ],
                 
@@ -51,6 +51,16 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
             <a href="#" class="fw-medium">Learn more about us</a>
         </div>
         <!-- ---All-time best sellers--- -->
+        <div class="bestSeller">
+            <div class="upperpart d-flex justify-content-between">
+                <div class="left">
+                    <p>All-Time best sellers</p>
+                    <h1 class="fw-normal">Items everyone loves</h1>
+                </div>
+                <a href="#" class="fw-medium">View all products</a>
+            </div>
+            <SingleCard :card="arrayCard[1]"/>
+        </div>
         <!-- ---Users testimonials--- -->
         <!-- ---Newsletter--- -->
         <!-- ---Tips and tricks--- -->
@@ -86,7 +96,7 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         height: 515px;
         color: $textColor;
         text-align: center;
-        width: 64%;
+        width: 65%;
         margin: auto;
         padding-top: 150px;
         margin-top: 100px;
@@ -102,6 +112,25 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
         a{
             font-size: 14px;
             @include buttonGreen(0)
+        }
+    }
+
+    .bestSeller{
+        padding-top: 100px;
+        width: 65%;
+        margin: auto;
+        p{
+            font-size: 20px;
+            color: $textGreen;
+        }
+        h1{
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+            font-size: 34px;
+        }
+        a{
+            height: fit-content;
+            font-size: 14px;
+            @include buttonGreenDark(0)
         }
     }
 </style>
