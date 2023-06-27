@@ -25,3 +25,17 @@
     transition: all 0.3s;
     margin-top: $marginT;
 }
+
+@mixin buttonGreenDark($marginT: 10px){
+    text-decoration: none;
+    color: $textColor;
+    background-color: $bgGreen;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin-top: $marginT;
+        &:hover{
+            color: $textColor;
+            background-color: $bgDarkGreen;
+        }
+}
