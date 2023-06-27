@@ -38,7 +38,9 @@
             background-image: url('../../assets/img/foodbg.png');
             width: 100%;
             transition: all 0.3s;
-            margin: 0 8px;
+            &:nth-child(2){
+            margin: 0 14px;
+            }
             &:hover{
                 transition: all 0.3s;
                 transform: scale(1.03);
