@@ -6,6 +6,7 @@ import SingleFoodtype from './mainparts/SingleFoodtype.vue';
 import SingleTestimonials from './mainparts/SingleTestimonials.vue';
 import NewsletterSection from './mainparts/NewsletterSection.vue';
 import BigPics from './mainparts/BigPics.vue';
+import SingleBigCard from './mainparts/SingleBigCard.vue';
     export default {
         name: 'AppMain',
         components: {
@@ -16,6 +17,7 @@ import BigPics from './mainparts/BigPics.vue';
             SingleTestimonials,
             NewsletterSection,
             BigPics,
+            SingleBigCard,
         },
         data() {
             return {
@@ -37,6 +39,12 @@ import BigPics from './mainparts/BigPics.vue';
                 bigPics: [{name: 'FIND THE BEST ANIMAL SUPPLIES', section: 'Popular accessories',  img: 'banner-8-2x.jpg', button: 'View all toys accessories'},
                         {name: 'FIND THE BEST FOOD', section: 'New food arrival', img: 'banner-9-2x.jpg', button: 'View all food products'}
                     ],
+
+                newProducts: {section: ['Colored pet bed', 'Colorful ball set', 'Dog bone', 'Animal transport bag', 'Animal transport cage', 'Closable cat litter'], 
+                            price: ['$25.00', '$29.00', '$18.00', '$29.00', '$35.00', '$16.00'], 
+                            img: ['product-8.jpg', 'product-2.jpg', 'product-3.jpg', 'product-4.jpg', 'product-5.jpg', 'product-10.jpg'], 
+                            discount: ['', '', '$29.00', '', '', '']
+                        },
             }
         },
         methods: {
@@ -115,6 +123,11 @@ import BigPics from './mainparts/BigPics.vue';
             </div>
         </div>
         <!-- ---New products arrival--- -->
+        <div class="newProducts text-center">
+            <h1>New products arrival</h1>
+            <p>Latest products</p>
+            <SingleBigCard :card="newProducts"/>
+        </div>
     </main>
 </template>
 
@@ -231,6 +244,21 @@ import BigPics from './mainparts/BigPics.vue';
                 color: lightgray;
                 font-size: 17px;
             }
+        }
+    }
+
+    .newProducts{
+        width: 65%;
+        margin: auto;
+        margin-top: 100px;
+        h1{
+            font-size: 34px;
+            font-family: 'Trocchi', Arial, Helvetica, sans-serif;
+        }
+        p{
+            margin-top: 20px;
+            color: $textGreen;
+            font-size: 20px;
         }
     }
 </style>
