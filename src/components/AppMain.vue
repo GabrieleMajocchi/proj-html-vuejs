@@ -5,6 +5,7 @@ import SingleCard from './mainparts/SingleCard.vue';
 import SingleFoodtype from './mainparts/SingleFoodtype.vue';
 import SingleTestimonials from './mainparts/SingleTestimonials.vue';
 import NewsletterSection from './mainparts/NewsletterSection.vue';
+import BigPics from './mainparts/BigPics.vue';
     export default {
         name: 'AppMain',
         components: {
@@ -14,6 +15,7 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
             SingleFoodtype,
             SingleTestimonials,
             NewsletterSection,
+            BigPics,
         },
         data() {
             return {
@@ -31,6 +33,10 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
                                 {name: 'Melissa Green, ThemeFusion', review: 'Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.', img: 'avatar-1.jpg'},
                                 {name: 'Sam Lewis, ThemeFusion', review: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus vestibulum ante ipsum.', img: 'avatar-4.jpg'},
                         ],
+
+                bigPics: [{name: 'FIND THE BEST ANIMAL SUPPLIES', section: 'Popular accessories',  img: 'banner-8-2x.jpg', button: 'View all toys accessories'},
+                        {name: 'FIND THE BEST FOOD', section: 'New food arrival', img: 'banner-9-2x.jpg', button: 'View all food products'}
+                    ],
             }
         },
         methods: {
@@ -85,6 +91,29 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
             <a href="#" class="fw-medium">Read all articles</a>
         </div>
         <!-- ---Big pic and infos--- -->
+        <div class="bigPic">
+            <div class="pics d-flex">
+                <BigPics v-for="bigpic in bigPics" :bigPic="bigpic"/>
+            </div>
+            <div class="bottom d-flex justify-content-center align-items-center">
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Free worldwide deliveries</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-map"></i>
+                    <p>Find stores near you</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Best prices guarranteed</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <p>All credit card accepted</p>
+                </div>
+            </div>
+        </div>
         <!-- ---New products arrival--- -->
     </main>
 </template>
@@ -181,6 +210,27 @@ import NewsletterSection from './mainparts/NewsletterSection.vue';
         a{
             font-size: 14px;
             @include buttonGreenDark(0)
+        }
+    }
+
+    .bigPic{
+        margin-top: 50px;
+        .bottom{
+            background-image: url('../assets/img/testimonialsbg.png');
+            height: 330px;
+            text-align: center;
+            div{
+                margin: 0 70px 0 70px;
+            }
+            i{
+                color: $textColor;
+                font-size: 50px;
+            }
+            p{
+                margin-top: 20px;
+                color: lightgray;
+                font-size: 17px;
+            }
         }
     }
 </style>
