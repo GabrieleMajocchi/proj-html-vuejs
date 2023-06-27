@@ -3,7 +3,8 @@ import FirstSection from './mainparts/FirstSection.vue';
 import PromoBanner from './mainparts/PromoBanner.vue';
 import SingleCard from './mainparts/SingleCard.vue';
 import SingleFoodtype from './mainparts/SingleFoodtype.vue';
-import SingleTestimonials from './mainparts/SingleTestimonials.vue'
+import SingleTestimonials from './mainparts/SingleTestimonials.vue';
+import NewsletterSection from './mainparts/NewsletterSection.vue';
     export default {
         name: 'AppMain',
         components: {
@@ -12,6 +13,7 @@ import SingleTestimonials from './mainparts/SingleTestimonials.vue'
             SingleCard,
             SingleFoodtype,
             SingleTestimonials,
+            NewsletterSection,
         },
         data() {
             return {
@@ -74,6 +76,7 @@ import SingleTestimonials from './mainparts/SingleTestimonials.vue'
             <SingleTestimonials :testimonials="testimonials"/>
         </div>
         <!-- ---Newsletter--- -->
+        <NewsletterSection/>
         <!-- ---Tips and tricks--- -->
         <!-- ---Big pic and infos--- -->
         <!-- ---New products arrival--- -->
