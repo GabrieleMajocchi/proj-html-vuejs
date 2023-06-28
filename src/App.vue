@@ -27,5 +27,6 @@
 
   *{
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
   }
 </style>
