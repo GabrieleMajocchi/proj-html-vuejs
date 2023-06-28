@@ -48,22 +48,25 @@
 
         .my-card{
             position: relative;
-            margin: 48px 0;
+            margin: 48px 0 0 0;
             width: calc(100% / 3 - 16px);
         }
         .my-card:nth-child(2){
-            margin: 48px 24px 48px 24px;
+            margin: 48px 24px 0 24px;
         }
         .my-card:nth-child(5){
-            margin: 48px 24px 48px 24px;
+            margin: 48px 24px 0 24px;
         }
-        p{
+        p:nth-child(2){
             font-size: 22px;
             cursor: default;
             padding-top: 40px;
             &:hover{
                 color: $textGreen;
             }
+        }
+        p:nth-child(3){
+            font-size: 17px;
         }
         .price{
             color: $textGreen;
