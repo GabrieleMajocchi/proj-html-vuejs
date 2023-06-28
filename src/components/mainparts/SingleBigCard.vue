@@ -57,6 +57,9 @@
         .my-card:nth-child(5){
             margin: 48px 24px 0 24px;
         }
+        p:nth-child(1){
+            padding-top: 40px;
+        }
         p:nth-child(2){
             font-size: 22px;
             cursor: default;
@@ -67,6 +70,7 @@
         }
         p:nth-child(3){
             font-size: 17px;
+            cursor: default;
         }
         .price{
             color: $textGreen;
