@@ -256,6 +256,7 @@ import SingleBigCard from './mainparts/SingleBigCard.vue';
         width: 65%;
         margin: auto;
         margin-top: 100px;
+        margin-bottom: 120px;
         h1{
             font-size: 34px;
             font-family: 'Trocchi', Arial, Helvetica, sans-serif;
