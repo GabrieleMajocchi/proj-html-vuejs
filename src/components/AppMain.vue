@@ -90,7 +90,9 @@ import SingleBigCard from './mainparts/SingleBigCard.vue';
             <SingleTestimonials :testimonials="testimonials"/>
         </div>
         <!-- ---Newsletter--- -->
-        <NewsletterSection/>
+        <div class="newsletter">
+            <NewsletterSection/>
+        </div>
         <!-- ---Tips and tricks--- -->
         <div class="tips text-center">
             <h1 class="fw-normal">Get the best tips & tricks</h1>
@@ -209,6 +211,9 @@ import SingleBigCard from './mainparts/SingleBigCard.vue';
         }
     }
 
+    .newsletter{
+        margin-top: -100px;
+    }
     .tips{
         margin-top: 100px;
         h1{
