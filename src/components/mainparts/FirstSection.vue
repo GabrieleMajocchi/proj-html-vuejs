@@ -33,6 +33,7 @@
         background-image: url('../../assets/img/banner-1.jpg');
         height: 790px;
         background-position: center;
+        background-size: cover;
         .my-container{
         width: 65%;
         margin: auto;

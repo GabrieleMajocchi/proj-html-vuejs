@@ -62,7 +62,7 @@
         }
         p:nth-child(2){
             font-size: 22px;
-            cursor: default;
+            cursor: pointer;
             padding-top: 40px;
             &:hover{
                 color: $textGreen;
@@ -80,6 +80,7 @@
             }
         }
         .links{
+            cursor: pointer;
             position: relative;
             &:hover .back{
                 opacity: 1;
@@ -119,10 +120,10 @@
                     font-size: 17px
                 }
                 a{
+                    cursor: pointer;
                     text-decoration: none;
                     color: $textColor;
                     letter-spacing: 1px;
-                    cursor: default;
                     &:hover{
                         color: lightgrey;
                     }

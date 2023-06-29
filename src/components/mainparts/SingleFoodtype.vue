@@ -35,6 +35,7 @@
     .foodtypeCards{
         width: 65%;
         .my-card{
+            cursor: pointer;
             background-image: url('../../assets/img/foodbg.png');
             width: 100%;
             transition: all 0.3s;

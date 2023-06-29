@@ -64,6 +64,7 @@
         font-size: 22px;
         width: 65%;
         margin: auto;
+        cursor: pointer;
         img{
             width: 100%;
         }
@@ -81,6 +82,9 @@
         .my-card{
             position: relative;
             margin: 48px 0;
+            p:nth-child(2){
+                cursor: pointer;
+            }
         }
         .my-card:nth-child(2){
             margin: 48px 12px 48px 24px;
@@ -96,6 +100,7 @@
             }
         }
         .links{
+            cursor: pointer;
             position: relative;
             &:hover .back{
                 opacity: 1;
@@ -116,10 +121,10 @@
                 color: $textColor;
                 font-size: 12px;
                 a{
+                    cursor: pointer;
                     text-decoration: none;
                     color: $textColor;
                     letter-spacing: 1px;
-                    cursor: default;
                     &:hover{
                         color: lightgrey;
                     }
@@ -134,6 +139,7 @@
         margin: auto;
         width: 65%;
         .links{
+            cursor: pointer;
             position: relative;
             &:hover .back{
                 opacity: 1;
@@ -164,6 +170,12 @@
             }
         }
         p{
+            &:nth-child(2){
+                cursor: pointer;
+                &:hover{
+                    color: $textGreen;
+                }
+            }
             padding: 24px 38px 0 38px;
             &:nth-child(3){
                 padding-top: 6px;
